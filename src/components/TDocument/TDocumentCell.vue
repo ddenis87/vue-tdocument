@@ -34,8 +34,8 @@ export default {
 @import './TDocumentCell.scss';
 
 .tdocument-cell {
-  border-right: thin solid $cell_border_grid;
-  border-bottom: thin solid $cell_border_grid;
+  border-right: $cell_border_grid;
+  border-bottom: $cell_border_grid;
 
   &_body {
     width: $cell_body_width;
@@ -45,6 +45,10 @@ export default {
   &_title {
     width: $cell_title_width;
     height: $cell_title_height;
+    background-color: $cell_title_background_color;
+    border-right: $cell_border_title;
+    border-bottom: $cell_border_title;
+    border-left: $cell_border_title;
   }
 }
 </style>
